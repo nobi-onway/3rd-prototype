@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 931928212353621823}
   - component: {fileID: 7018424969558918719}
   - component: {fileID: 3443053006538227552}
+  - component: {fileID: -6515782478739668115}
+  - component: {fileID: 4925329407256355543}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db8bf8d15c7abd4183335de683aa2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 15
 --- !u!65 &3443053006538227552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67,6 +70,45 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8007841, y: 1.9439619, z: 3.5306325}
   m_Center: {x: -0.037483692, y: 0.9290341, z: -0.025496721}
+--- !u!114 &-6515782478739668115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190529092296972710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2974a0a5c6dc049b94b9cff615e7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4925329407256355543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190529092296972710}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2317242477226046027
 GameObject:
   m_ObjectHideFlags: 0
